@@ -23,23 +23,26 @@ You'll need the following installed to run the template successfully:
 
 #### Creating a new app
 
-```bash
-rails new demo_app -d postgresql -m https://raw.githubusercontent.com/Tinix/rails_templates/master/template_1.rb
 ```
+$rails new demo_app -d postgresql -m https://raw.githubusercontent.com/Tinix/rails_templates/master/template_1.rb
+```
+
 * second case
 
-```bash
-rails new demo_app -d postgresql -m https://raw.githubusercontent.com/Tinix/rails_templates/master/template_2.rb
+
+```
+$rails new demo_app -d postgresql -m https://raw.githubusercontent.com/Tinix/rails_templates/master/template_2.rb
 ```
 
 Or if you have downloaded this repo, you can reference template.rb locally:
 
-```bash
-rails new demo_app -d postgresql -m template_1.rb
+```
+$rails new demo_app -d postgresql -m template_1.rb
 ```
 or 
-```bash
-rails new myapp -d postgresql -m template_2.rb
+
+```
+$rails new demo_app -d postgresql -m template_2.rb
 ```
 
 ❓Having trouble? Try adding `DISABLE_SPRING=1` before `rails new`. Spring will get confused if you create an app with the same name twice.
