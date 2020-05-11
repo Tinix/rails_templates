@@ -92,9 +92,10 @@ for the services you have added to the encrypted credentials using `EDITOR=vim r
 rails db:drop
 spring stop
 cd ..
-rm -rf myapp
+rm -rf demo_app
 ```
 
+#### Cleaning yarn and check files
 ```bash
 yarn cache clean
 yarn install --check-files
