@@ -14,7 +14,7 @@ Rails template, so you pass it in as an option when creating a new app.
 You'll need the following installed to run the template successfully:
 
 * Ruby 2.5 or higher
-* Redis - For ActionCable support
+* Redis (optional) - For ActionCable support
 * bundler - `gem install bundler`
 * rails - `gem install rails`
 * Yarn - `brew install yarn` or [Install Yarn](https://yarnpkg.com/en/docs/install)
@@ -23,26 +23,26 @@ You'll need the following installed to run the template successfully:
 
 #### Creating a new app
 
-```
-$rails new demo_app -d postgresql -m https://raw.githubusercontent.com/Tinix/rails_templates/master/template_1.rb
+```bash
+rails new demo_app -d postgresql -m https://raw.githubusercontent.com/Tinix/rails_templates/master/template_1.rb
 ```
 
 * second case
 
 
-```
-$rails new demo_app -d postgresql -m https://raw.githubusercontent.com/Tinix/rails_templates/master/template_2.rb
+```bash
+rails new demo_app -d postgresql -m https://raw.githubusercontent.com/Tinix/rails_templates/master/template_2.rb
 ```
 
 Or if you have downloaded this repo, you can reference template.rb locally:
 
-```
-$rails new demo_app -d postgresql -m template_1.rb
+```bash
+rails new demo_app -d postgresql -m template_1.rb
 ```
 or 
 
-```
-$rails new demo_app -d postgresql -m template_2.rb
+```bash
+rails new demo_app -d postgresql -m template_2.rb
 ```
 
 ❓Having trouble? Try adding `DISABLE_SPRING=1` before `rails new`. Spring will get confused if you create an app with the same name twice.
@@ -94,3 +94,9 @@ spring stop
 cd ..
 rm -rf myapp
 ```
+
+```bash
+yarn cache clean
+yarn install --check-files
+```
+
